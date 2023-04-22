@@ -30,9 +30,9 @@ use App\Models\Category;
 
 // Route::get('/projects/{id}', 'projectController@show');
 
-// Route::get('/home', 'homeController@home');
+Route::get('/home', 'homeController@home');
 
-// Route::get('/', 'homeController@home');
+Route::get('/', 'homeController@home');
 
 Route::resource('projects', 'projectController');
 Route::get('/category', [projectController::class, 'category']);

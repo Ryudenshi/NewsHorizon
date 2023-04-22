@@ -2,6 +2,6 @@
 
 @section('contentSpace')
 
-<p>askjfa;fja</p>
+<p>{{ ($project->title) }}</p>
 
 @endsection

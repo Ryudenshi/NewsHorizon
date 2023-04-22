@@ -19,17 +19,15 @@ class projectController extends Controller
 
     public function show($id)
     {
-        return Project::find($id);
+
+        $project = Project::find($id);
+
+        return view('projects.project', compact('project'));
     }
 
     public function create()
     {
         return view('projects.create');
-    }
-
-    public function lol()
-    {
-        return view('projects.lol');
     }
 
     public function store(Request $request)
