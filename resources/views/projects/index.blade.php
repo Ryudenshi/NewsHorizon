@@ -13,7 +13,7 @@
         </div>
         <div class="mx-1 my-2 row">
             <div class="col-md-5">
-                <img style="width: 300px;" src="{{ asset('storage/'.$project->image) }}" alt="Project Image">
+                <img src="{{ asset('storage/app/public/images' . $project->image) }}" alt="Project Image">
             </div>
             <div class="col-md-6">
                 <h6 class="mb-3 d-flex">{{ ($project->header) }}</h6>

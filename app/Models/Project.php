@@ -14,11 +14,12 @@ class Project extends Model
         'title',
         'description',
         'header',
-        'catefory_id'
+        'category_id'
     ];
 
     public function getCategory(){
-        return Category::find($this->category_id);
+        $category = Category::find($this->category_id);
+        return $category ? $category->name : null;
     }
 
     public function category(){

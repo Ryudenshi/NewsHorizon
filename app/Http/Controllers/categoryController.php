@@ -11,7 +11,7 @@ class categoryController extends Controller
     public function chooseCategory($category){
 
         $categories = Category::where('code', $category)->first();
-        return view('category.categories', compact('category'));
+        return view('category', compact('category'));
 
     }
 
