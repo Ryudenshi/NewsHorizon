@@ -37,9 +37,7 @@ Route::get('/', 'homeController@home');
 Route::resource('projects', 'projectController');
 Route::get('/category', [projectController::class, 'category']);
 
-Route::get('test', function () {
-    dd('jfalksflaks');
-});
+Route::get('/projects/{id}', 'ProjectController@show')->name('projects.show');
 
 Route::get('projects/{project}', [projectController::class, 'show']);
 

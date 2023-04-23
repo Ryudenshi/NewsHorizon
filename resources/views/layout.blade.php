@@ -81,7 +81,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light justify-content-center bg-light row">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/projects/create">News manage</a>
+                                <a class="nav-link" href="/NewsHorizon/public/projects/create">News manage</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
