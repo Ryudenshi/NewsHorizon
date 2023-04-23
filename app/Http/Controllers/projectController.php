@@ -21,7 +21,7 @@ class projectController extends Controller
     {
 
         $project = Project::find($id);
-
+        
         return view('projects.project', compact('project'));
     }
 

@@ -18,28 +18,15 @@ use App\Models\Category;
 |
 */
 
-// Route::get('/news-page-1', 'newsController@news');
-
-// Route::get('/projects', 'projectController@index');
-
-// Route::get('/projects/create', 'projectController@create');
-
-// Route::post('/projects', 'projectController@store');
-
-// Route::get('projects/create', 'categoryController@chooseCategory');
-
-// Route::get('/projects/{id}', 'projectController@show');
-
 Route::get('/home', 'homeController@home');
 
 Route::get('/', 'homeController@home');
 
 Route::resource('projects', 'projectController');
+
 Route::get('/category', [projectController::class, 'category']);
 
 Route::get('/projects/{id}', 'ProjectController@show')->name('projects.show');
-
-Route::get('projects/{project}', [projectController::class, 'show']);
 
 Auth::routes();
 

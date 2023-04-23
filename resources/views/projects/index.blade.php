@@ -15,18 +15,10 @@
             <h6>{{ ($project->header) }}</h6>
         </div>
         <div>
-            <Button onclick="redirect()">
-                Press
-            </Button>
+            <a href="{{ route('projects.show', ['id' => $project->id]) }}" class="btn btn-primary">View Project</a>
         </div>
     </div>
     @endforeach
 </div>
-
-<script>
-function redirect() {
-    window.location.href = "{{ route('projects.show', ['id' => $project->id]) }}";
-}
-</script>
 
 @endsection
