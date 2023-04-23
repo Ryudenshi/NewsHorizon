@@ -32,17 +32,10 @@ class projectController extends Controller
 
     public function store(Request $request)
     {
-
-        $this->validate($request, [
-            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
-            'title',
-            'description',
-            'header'
-        ]);
-
+        
         $project = new Project();
 
-        $project->image = request('image')->store('uploads', 'public');
+        $project->image;
         $project->title = request('title');
         $project->description = request('description');
         $project->header = request('header');

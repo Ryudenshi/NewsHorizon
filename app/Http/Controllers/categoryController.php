@@ -8,13 +8,12 @@ use App\Models\Category;
 
 class categoryController extends Controller
 {
-    /*public function chooseCategory($category){
+    public function chooseCategory($category){
 
         $categories = Category::where('code', $category)->first();
-        dd(($categories));
         return view('category.categories', compact('category'));
 
-    }*/
+    }
 
     public function category(){
         return view('category');

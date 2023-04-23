@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('header');
             $table->text('description');
             $table->integer('category_id')->nullable();
-            $table->binary('image')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
