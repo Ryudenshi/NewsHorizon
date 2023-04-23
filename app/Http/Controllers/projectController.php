@@ -32,17 +32,16 @@ class projectController extends Controller
 
     public function store(Request $request)
     {
+        $imagePath = $request->file('image')->store('public/images');
         
         $project = new Project();
 
-        $project->image;
+        $project->image = $imagePath;
         $project->title = request('title');
         $project->description = request('description');
         $project->header = request('header');
 
         $project->save();
-
-
 
         return redirect('/projects');
     }

@@ -5,17 +5,22 @@
 <div class="container mt-2 newsSpace">
     @foreach ($projects as $project)
     <div class="newsItem">
-        <div class="m-1">
+        <div class="mx-1 row d-flex justify-content-end">
             <p>{{ ($project->updated_at) }}</p>
         </div>
-        <div class="m-2 d-inline-block">
+        <div class="mx-2 d-inline-block">
             <h3>{{ ($project->category->name) }} | {{ ($project->title) }}</h3>
         </div>
-        <div class="m-2">
-            <h6>{{ ($project->header) }}</h6>
-        </div>
-        <div>
-            <a href="{{ route('projects.show', ['id' => $project->id]) }}" class="btn btn-primary">View Project</a>
+        <div class="mx-1 my-2 row">
+            <div class="col-md-5">
+                <img style="width: 300px;" src="{{ asset('storage/'.$project->image) }}" alt="Project Image">
+            </div>
+            <div class="col-md-6">
+                <h6 class="mb-3 d-flex">{{ ($project->header) }}</h6>
+                <a class="readMore text-underline-offset-none" href="{{ route('projects.show', ['id' => $project->id]) }}">
+                    Read more >
+                </a>
+            </div>
         </div>
     </div>
     @endforeach

@@ -91,3 +91,17 @@ footer {
 .newsItem{
     border-bottom: 2px solid #c0c0c0;
 }
+
+.readMore{
+    border-radius: 5px;
+    border: none;
+    background-color: #FF9AE9;
+    color: #fff;
+    padding: 10px;
+    text-underline-offset: none;
+}
+.readMore:hover{
+    color: black;
+    text-underline-offset: none;
+    text-decoration: none;
+}
