@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.contentSpace {
+    width: 100%;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+}
+
+.navBarColor {
+    background-color: #FF9AE9;
+}
+
+.supportUs {
+    border-radius: 5px;
+    border: none;
+    background-color: #FF9AE9;
+    color: #fff;
+    height: 40px;
+    width: 110px;
+}
+
+.supportUs:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.userButton {
+    height: 40px;
+    width: 40px;
+    background-color: #FF9AE9;
+    border: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+.navFooter {
+    background-color: #FF9AE9;
+}
+
+.vh {
+    border-left: 1px solid gray;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #FF9AE9;
+}
+
+.footerlinks {
+    color: #FF9AE9;
+}
+
+.footerlinks:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.page {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 10vh;
+}
+
+.userMenu{
+    text-underline-offset: none;
+}
+
+.newsSpace{
+    width: 100vh;
+}
+
+.newsItem{
+    border-bottom: 2px solid #c0c0c0;
+}
