@@ -18,4 +18,15 @@ class categoryController extends Controller
     public function category(){
         return view('category');
     }
+
+    public function store(Request $request){
+        $this->validate($request, [
+            'name' => 'required'
+        ]);
+
+        $category = new Category();
+
+        $category->name = $request->input('name');
+        $category->save();
+    }
 }

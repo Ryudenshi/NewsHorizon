@@ -8,7 +8,7 @@
             <h1>{{ ($project->title) }}</h1>
         </div>
         <div class="row justify-content-center">
-            <img class="projectImage" style="width: 70%" src="{{ asset('/storage/images'.$project->image) }}" alt="Project Image">
+            <img class="projectImage" style="width: 70%" src="{{ asset('public/storage/images' . $project->image) }}" alt="Project Image">
         </div>
         <div class="row">
             <h5>{{ ($project->header) }}</h3>

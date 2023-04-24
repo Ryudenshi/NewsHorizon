@@ -35,7 +35,7 @@
             </form>
         </div>
         <div class="relative flex items-center min-h-screen justify-content-center overflow-hidden col-md-3 border">
-            <form action="/projects" method="POST" class="shadow p-12" enctype="multipart/form-data">
+            <form action="/NewsHorizon/public/projects" method="POST" class="shadow p-12" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <h3>Add new category</h3>
                 <div class="py-3">

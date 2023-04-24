@@ -80,19 +80,19 @@ footer {
     min-height: 10vh;
 }
 
-.userMenu{
+.userMenu {
     text-underline-offset: none;
 }
 
-.newsSpace{
+.newsSpace {
     width: 100vh;
 }
 
-.newsItem{
+.newsItem {
     border-bottom: 2px solid #c0c0c0;
 }
 
-.readMore{
+.readMore {
     border-radius: 5px;
     border: none;
     background-color: #FF9AE9;
@@ -100,8 +100,15 @@ footer {
     padding: 10px;
     text-underline-offset: none;
 }
-.readMore:hover{
+
+.readMore:hover {
     color: black;
     text-underline-offset: none;
     text-decoration: none;
+}
+
+.newsImageHome{
+    height: 100px;
+    width: 300px;
+    background-color: rgb(174, 174, 174);
 }

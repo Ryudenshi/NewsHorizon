@@ -24,7 +24,7 @@ Route::get('/', 'homeController@home');
 
 Route::resource('projects', 'projectController');
 
-Route::get('/category', [projectController::class, 'category']);
+Route::resource('category', 'categoryController');
 
 Route::get('/projects/{id}', 'ProjectController@show')->name('projects.show');
 
