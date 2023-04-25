@@ -8,17 +8,29 @@
             <form action="/NewsHorizon/public/projects" method="POST" class="shadow p-12" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <h3>Add new article</h3>
-                <div class="my-2">
-                    <input type="text" name="title" placeholder="title">
+                <div class="input-group my-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Title</span>
+                    </div>
+                    <input class="form-control" type="text" name="title">
                 </div>
-                <div class="my-2">
-                    <textarea type="text" name="header" placeholder="header"></textarea>
+                <div class="input-group my-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Header</span>
+                    </div>
+                    <textarea class="form-control" type="text" name="header" aria-label="With textarea"></textarea>
                 </div>
-                <div class="my-2">
-                    <textarea type="text" name="description" placeholder="description"></textarea>
+                <div class="input-group my-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Description</span>
+                    </div>
+                    <textarea class="form-control" type="text" name="description" aria-label="With textarea"></textarea>
                 </div>
-                <div class="my-2">
-                    <input type="integer" name="category_id" placeholder="enter category id">
+                <div class="input-group my-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Category (id)</span>
+                    </div>
+                    <input class="form-control" type="integer" name="category_id">
                 </div>
                 <div class="my-2">
                     <label class="block mb-4 ">
