@@ -50,8 +50,11 @@
             <form action="/NewsHorizon/public/projects" method="POST" class="shadow p-12" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <h3>Add new category</h3>
-                <div class="py-3">
-                    <input type="text" name="name" placeholder="name">
+                <div class="input-group my-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Category</span>
+                    </div>
+                    <input class="form-control" type="text" name="name">
                 </div>
                 <div>
                     <button type="submit" class="px-4 py-2 text-sm text-black bg-indigo-600 rounded">Add</button>

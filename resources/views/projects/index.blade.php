@@ -12,14 +12,18 @@
             <h3>{{ ($project->category->name) }} | {{ ($project->title) }}</h3>
         </div>
         <div class="mx-1 my-2 row">
-            <div class="col-md-5">
-                <img class="" style="width: 300px;" src="{{ asset('storage/' . $project->image) }}" alt="Project Image">
-            </div>
             <div class="col-md-6">
-                <h6 class="mb-3 d-flex">{{ ($project->header) }}</h6>
-                <a class="readMore text-underline-offset-none" href="{{ route('projects.show', ['id' => $project->id]) }}">
-                    Read more >
-                </a>
+                <img class="" style="width: 350px;" src="{{ asset('storage/' . $project->image) }}" alt="Project Image">
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <h6 class="mb-3 d-flex">{{ ($project->header) }}</h6>
+                </div>
+                <div class="row">
+                    <a class="readMore text-underline-offset-none" href="{{ route('projects.show', ['id' => $project->id]) }}">
+                        Read more >
+                    </a>
+                </div>
             </div>
         </div>
     </div>
